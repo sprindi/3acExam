@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: theme('colors.bg');
+  color: theme('colors.text');
+  font-size: 15.5px;
+  line-height: 1.65;
+  min-height: 100vh;
+  padding-bottom: 64px;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Gradient title text */
+.title-gradient {
+  background: linear-gradient(90deg, theme('colors.green'), theme('colors.blue'));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hints darija dans le texte des leçons : un peu plus discrets que le texte */
+.lesson-body span[dir='rtl'] {
+  color: theme('colors.muted');
+  font-size: 0.95em;
+}
+
+/* Native <select> uses theme colors for its options on supporting browsers */
+select option {
+  background: theme('colors.surface');
+  color: theme('colors.text');
+}

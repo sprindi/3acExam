@@ -1,0 +1,40 @@
+// Classes Tailwind par couleur de chapitre (Nerveux=bleu, Muscle=orange, Immunité=vert).
+// Tailwind doit voir ces noms de classes en entier → pas de concaténation dynamique.
+export const ACCENT = {
+  blue: {
+    text: 'text-blue',
+    bg: 'bg-blue',
+    border: 'border-blue/30',
+    softBorder: 'border-blue/25',
+    softBg: 'bg-blue/10',
+    ring: 'hover:border-blue hover:text-blue',
+    hoverText: 'hover:text-blue',
+    gradient: 'from-blue/[0.16] to-blue/[0.04] border-blue/30',
+    chipBg: 'bg-blue/10 border-blue/25 text-[#9bc0ff]',
+    glow: 'shadow-[0_0_0_1px_rgba(91,155,255,0.25)]',
+  },
+  orange: {
+    text: 'text-orange',
+    bg: 'bg-orange',
+    border: 'border-orange/30',
+    softBorder: 'border-orange/25',
+    softBg: 'bg-orange/10',
+    ring: 'hover:border-orange hover:text-orange',
+    hoverText: 'hover:text-orange',
+    gradient: 'from-orange/[0.16] to-orange/[0.04] border-orange/30',
+    chipBg: 'bg-orange/10 border-orange/25 text-[#ffc79a]',
+    glow: 'shadow-[0_0_0_1px_rgba(255,154,77,0.25)]',
+  },
+  green: {
+    text: 'text-green',
+    bg: 'bg-green',
+    border: 'border-green/30',
+    softBorder: 'border-green/25',
+    softBg: 'bg-green/10',
+    ring: 'hover:border-green hover:text-green',
+    hoverText: 'hover:text-green',
+    gradient: 'from-green/[0.16] to-green/[0.04] border-green/30',
+    chipBg: 'bg-green/10 border-green/25 text-[#86e7c8]',
+    glow: 'shadow-[0_0_0_1px_rgba(47,214,166,0.25)]',
+  },
+}
